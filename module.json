@@ -1,13 +1,16 @@
 {
   "id": "gyongyvilag-foundry-vttmodule-ds",
   "title": "Draw Steel: Gyöngyvilág Custom Languages & Cultures",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
   },
   "description": "<div><p>Simple replacement of Draw Steel languages and cultures with custom lists for the <a href=\"https://gyongyvilag.klucsik.hu/\">Gyöngyvilág </a> setting</p></div>",
-  "scripts": [
+  "url": "https://github.com/klucsik/gyongyvilag-foundry-vttmodule-ds",
+  "manifest": "https://github.com/klucsik/gyongyvilag-foundry-vttmodule-ds/releases/latest/download/module.json",
+  "download": "https://github.com/klucsik/gyongyvilag-foundry-vttmodule-ds/releases/latest/download/module.zip",
+  "esmodules": [
     "scripts/module.js"
   ],
   "authors": [
