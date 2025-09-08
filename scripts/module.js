@@ -3,6 +3,8 @@
  * Replaces Draw Steel languages with custom languages for the Gyöngyvilág setting
  */
 
+import { gyongyvilagLanguages } from './languages.js';
+
 // Try setup hook - fires after init but before ready
 Hooks.once("setup", function() {
   console.log("Gyöngyvilág | Setup hook fired - replacing Draw Steel languages");
@@ -19,13 +21,10 @@ Hooks.once("setup", function() {
   
   console.log("Gyöngyvilág | After clearing, languages count:", Object.keys(languagesObj).length);
   
-  // Add our custom languages
-  languagesObj.szakallszulott = {
-    label: "Szakállszülött" 
-  };
-  languagesObj.fenyesszo = {
-    label: "Fényes Szó" 
-  };
+  // Add our custom languages from the imported configuration
+  for (const [key, languageData] of Object.entries(gyongyvilagLanguages)) {
+    languagesObj[key] = languageData;
+  }
   
   console.log("Gyöngyvilág | Custom languages added, final count:", Object.keys(languagesObj).length);
   console.log("Gyöngyvilág | Final languages:", Object.keys(languagesObj));
