@@ -67,5 +67,10 @@ export const gyongyvilagLanguages = {
   // Démon nemzettség (Demon Nation)
   melynapszso: {
     label: "Mélynapszó (démon)"
+  },
+
+  // Egyebek
+  gondolbeszel: {
+    label: "Gondolbeszél"
   }
 };
